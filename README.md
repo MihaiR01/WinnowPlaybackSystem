@@ -23,11 +23,11 @@ HOW TO RUN:
 1. Run Application.java and wait for the application to start.
 2.1. Ensure there are videos in your computer and copy the path to send POST requests to populate the database with records.
 2.2. You can also log in with H2 in localhost: http://localhost:8080/h2-console with the details below to use SQL querries.
------------------------------------------
+
 spring.datasource.url=jdbc:h2:mem:testdb
 spring.datasource.username=sa
 spring.datasource.password=
------------------------------------------
+
 3. Once you have stored the videos, send multiple POST requestes for play to see the functionality. Repeated POST, even for the same ID/Name will be added in queue, ensuring they are played in order.
 
 Assumptions:
