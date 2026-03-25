@@ -11,7 +11,7 @@ POST http://localhost:8080/videos -> give a JSON with name and path, it will add
 
 GET http://localhost:8080/videos -> returns data about all the videos currently added in the database
 
-POST http://localhost:8080/play/{id} -> send a play request to the backend to play the video with ID = {id}
+POST http://localhost:8080/player/play/{id} -> send a play request to the backend to play the video with ID = {id}
 POST http://localhost:8080/player/play?name={name} -> sends a play request to the backend to play the video with name = {name}. The name between the brackets should be the name you sent in the post above, like "prajitura1".
 
 GET http://localhost:8080/player/status -> returns the status of the application, it can be: IDLE (no video playing for more than 3 seconds), PLAYING (video is ongoing), ERROR and FINISHED.
